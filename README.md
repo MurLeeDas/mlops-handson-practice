@@ -1,4 +1,4 @@
-# MLOps Crash Course 2025 - 90 Day Journey
+# MLOps Hands-on 2025 - 90 Day Journey
 
 > **Learning Goal:** Master MLOps fundamentals and deploy production-ready ML systems
 
