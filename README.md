@@ -6,9 +6,9 @@
 This repository documents my 90-day MLOps learning journey, transitioning from DevOps to MLOps engineering.
 
 ## Course Structure
-- **Lesson 01:** [Telecom Churn Prediction](./lesson-01-churn-prediction/) - First ML deployment
-- **Lesson 02:** Model Packaging & Containerization
-- **Lesson 03:** Data Pipelines & Feature Engineering
+- **Lesson 01:** [Telecom Churn Prediction](./lesson-01-churn-prediction/) - Basic ML deployment
+- **Lesson 02:** Multi-model serving
+- **Lesson 03:** Reliability & Compliance
 - **[More lessons...]**
 
 ## 🛠️ Tech Stack
