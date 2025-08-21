@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  # MLOps Application
+  mlops-api:
+    build: .
+    container_name: mlops-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PROMETHEUS_METRICS_ENABLED=true
+    networks:
+      - mlops-network
+    restart: unless-stopped
+
+  # Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: mlops-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=30d'
+      - '--web.enable-lifecycle'
+    networks:
+      - mlops-network
+    restart: unless-stopped
+
+  # Grafana
+  grafana:
+    image: grafana/grafana:latest
+    container_name: mlops-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=mlops123
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - mlops-network
+    restart: unless-stopped
+
+volumes:
+  prometheus_data:
+  grafana_data:
+
+networks:
+  mlops-network:
+    driver: bridge
