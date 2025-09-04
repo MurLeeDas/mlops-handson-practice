@@ -1,0 +1,6 @@
+{
+  "version": "v1.0",
+  "algorithm": "RandomForest",
+  "auc_score": 0.7246772373891017,
+  "training_date": "2025-08-09T11:38:48.910563"
+}

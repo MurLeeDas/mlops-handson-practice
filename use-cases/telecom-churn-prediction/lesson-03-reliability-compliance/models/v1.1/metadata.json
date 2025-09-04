@@ -1,0 +1,6 @@
+{
+  "version": "v1.1",
+  "algorithm": "XGBoost",
+  "auc_score": 0.7049482218973745,
+  "training_date": "2025-08-09T11:38:48.974323"
+}

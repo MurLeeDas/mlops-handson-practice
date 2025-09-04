@@ -1,0 +1,20 @@
+groups:
+  - name: mlops_basic_alerts
+    rules:
+      - alert: ModelAccuracyDrop
+        expr: mlops_model_accuracy < 0.80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Model accuracy dropped"
+          description: "Model accuracy is {{ $value }}"
+      
+      - alert: HighAPILatency
+        expr: histogram_quantile(0.95, rate(mlops_api_request_duration_seconds_bucket[5m])) > 1.0
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High API latency"
+          description: "API latency is {{ $value }}s"

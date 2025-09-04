@@ -1,6 +1,0 @@
-{
-  "version": "v2.0",
-  "algorithm": "LogisticRegression",
-  "auc_score": 0.7232494435884266,
-  "training_date": "2025-08-09T11:38:48.993130"
-}
