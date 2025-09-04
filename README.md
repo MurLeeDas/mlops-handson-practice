@@ -275,7 +275,7 @@ graph TB
 ✅ **ML Platform Architect** ($200k-$250k)
 ✅ **Staff ML Engineer** ($250k-$350k)  
 ✅ **Principal Engineer** ($350k+)
-✅ **ML Infrastructure Lead** (Any FAANG company)
+✅ **ML Infrastructure Lead** (Any MAANG company)
 
 ---
 
@@ -291,9 +291,9 @@ Building production ML systems that actually work is my passion. If you're looki
 
 **Let's talk!** I'm always excited to discuss the future of ML infrastructure.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](your-linkedin-url)
-[![Email](https://img.shields.io/badge/Email-Contact-red.svg)](mailto:your-email)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green.svg)](your-website-url)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://www.linkedin.com/in/dossops/)
+[![Email](https://img.shields.io/badge/Email-Contact-red.svg)](mailto:muralidoss@outlook.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green.svg)](rtym.in)
 
 ---
 
